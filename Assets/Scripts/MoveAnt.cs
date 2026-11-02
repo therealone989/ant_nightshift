@@ -13,33 +13,29 @@ public class MoveAnt : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.W))
+        Move();
+    }
+
+    public void Move()
+    {
+        Vector3 direction = Vector3.zero;
+
+        if (Input.GetKey(KeyCode.W)){direction += Vector3.up;}
+        if (Input.GetKey(KeyCode.D)){direction += Vector3.right;}
+        if (Input.GetKey(KeyCode.A)){direction += Vector3.left;}
+        if (Input.GetKey(KeyCode.S)){direction += Vector3.down;}
+
+        if (direction != Vector3.zero)
         {
             walking = true;
-            transform.position += Vector3.up * moveSpeed * Time.deltaTime;
-            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            walking = true;
-            transform.position += Vector3.down * moveSpeed * Time.deltaTime;
-            transform.rotation = Quaternion.Euler(0f, 0f, 180f);
-        } else if(Input.GetKey(KeyCode.D))
-        {
-            walking = true;
-            transform.position += Vector3.right * moveSpeed * Time.deltaTime;
-            transform.rotation = Quaternion.Euler(0f, 0f, -90f);
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            walking = true;
-            transform.position += Vector3.left * moveSpeed * Time.deltaTime;
-            transform.rotation = Quaternion.Euler(0f, 0f, 90f);
-        }
-        else
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
+        } else
         {
             walking = false;
         }
+
+        transform.position += direction.normalized * moveSpeed * Time.deltaTime;
         animator.SetBool("isWalking", walking);
     }
 }
