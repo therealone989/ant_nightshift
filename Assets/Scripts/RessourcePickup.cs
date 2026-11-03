@@ -3,6 +3,12 @@ using UnityEngine;
 public class RessourcePickup : MonoBehaviour
 {
     Ressource pickedItem;
+    Inventory playerInventory;
+
+    private void Start()
+    {
+        playerInventory = GetComponent<Inventory>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.GetComponent<Ressource>() == null) return;
@@ -12,7 +18,8 @@ public class RessourcePickup : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.GetComponent<Ressource>().ressourceType == pickedItem.ressourceType)
+        if (pickedItem == null) return;
+        if(collision.gameObject == pickedItem.gameObject)
         {
             pickedItem = null;
         }
@@ -22,10 +29,12 @@ public class RessourcePickup : MonoBehaviour
     {
         if(pickedItem != null && Input.GetKeyDown(KeyCode.E)) {
             Debug.Log("Ressource Eingesammelt!!");
+            playerInventory.addRessource(pickedItem.ressourceType);
             // UI Text anzeigen "E - Pickup"
             // Event an UI Script - richtiger enum type stat hochzählen.
-            pickedItem = null;
             Destroy(pickedItem.gameObject);
+            pickedItem = null;
+            
         }
     }
 

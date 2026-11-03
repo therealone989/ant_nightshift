@@ -832,7 +832,7 @@ GameObject:
   - component: {fileID: 318714469}
   - component: {fileID: 318714468}
   m_Layer: 5
-  m_Name: Image
+  m_Name: IMG_Berry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10471,7 +10471,7 @@ GameObject:
   - component: {fileID: 1477551095}
   - component: {fileID: 1477551094}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Stones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11111,7 +11111,7 @@ GameObject:
   - component: {fileID: 1686273935}
   - component: {fileID: 1686273934}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Mushrooms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11330,10 +11330,11 @@ GameObject:
   - component: {fileID: 1754358210}
   - component: {fileID: 1754358209}
   - component: {fileID: 1754358208}
-  - component: {fileID: 1754358211}
   - component: {fileID: 1754358212}
   - component: {fileID: 1754358213}
+  - component: {fileID: 1754358211}
   - component: {fileID: 1754358214}
+  - component: {fileID: 1754358215}
   m_Layer: 0
   m_Name: Ant_Player
   m_TagString: Untagged
@@ -11531,6 +11532,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5938b255e25561d4ea2364cb42bfbfd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1754358215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754358207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6bf34c1084ab2848af8150c7a0bb5e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1778030864
@@ -12129,6 +12142,7 @@ GameObject:
   - component: {fileID: 1916510843}
   - component: {fileID: 1916510842}
   - component: {fileID: 1916510841}
+  - component: {fileID: 1916510845}
   m_Layer: 5
   m_Name: GameCanvas
   m_TagString: Untagged
@@ -12219,6 +12233,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1916510845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916510840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3565f3681a8b34b9b29f28e1942fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  berriesText: {fileID: 2143889249}
+  stonesText: {fileID: 1477551094}
+  mushroomsText: {fileID: 1686273934}
+  playerInv: {fileID: 1754358215}
 --- !u!1 &1920644640
 GameObject:
   m_ObjectHideFlags: 0
@@ -12608,7 +12638,7 @@ GameObject:
   - component: {fileID: 2041396951}
   - component: {fileID: 2041396950}
   m_Layer: 5
-  m_Name: Image
+  m_Name: IMG_Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12830,7 +12860,7 @@ GameObject:
   - component: {fileID: 2099980151}
   - component: {fileID: 2099980150}
   m_Layer: 5
-  m_Name: Image
+  m_Name: IMG_Mushroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12989,7 +13019,7 @@ GameObject:
   - component: {fileID: 2143889250}
   - component: {fileID: 2143889249}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Berries
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
