@@ -1,10 +1,10 @@
 using UnityEngine;
-
+using System.Collections.Generic;
 public class RessourcePickup : MonoBehaviour
 {
     Ressource pickedItem;
     Inventory playerInventory;
-
+    List<Ressource> nearbyRessources = new List<Ressource>();
     private void Start()
     {
         playerInventory = GetComponent<Inventory>();
