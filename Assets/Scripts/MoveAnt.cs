@@ -6,26 +6,34 @@ public class MoveAnt : MonoBehaviour
     [SerializeField] bool walking = false;
     [SerializeField] Animator animator;
     [SerializeField] float moveSpeed = 10f;
+    Rigidbody2D rb;
+    Vector2 direction = Vector2.zero;
     void Start()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
         Move();
     }
-
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
+    }
     public void Move()
     {
-        Vector3 direction = Vector3.zero;
+        direction = Vector2.zero;
 
-        if (Input.GetKey(KeyCode.W)){direction += Vector3.up;}
-        if (Input.GetKey(KeyCode.D)){direction += Vector3.right;}
-        if (Input.GetKey(KeyCode.A)){direction += Vector3.left;}
-        if (Input.GetKey(KeyCode.S)){direction += Vector3.down;}
+        if (Input.GetKey(KeyCode.W)){direction += Vector2.up;}
+        if (Input.GetKey(KeyCode.D)){direction += Vector2.right;}
+        if (Input.GetKey(KeyCode.A)){direction += Vector2.left;}
+        if (Input.GetKey(KeyCode.S)){direction += Vector2.down;}
 
-        if (direction != Vector3.zero)
+        direction = direction.normalized;
+
+        if (direction != Vector2.zero)
         {
             walking = true;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
@@ -34,8 +42,6 @@ public class MoveAnt : MonoBehaviour
         {
             walking = false;
         }
-
-        transform.position += direction.normalized * moveSpeed * Time.deltaTime;
         animator.SetBool("isWalking", walking);
     }
 }
