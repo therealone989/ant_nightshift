@@ -6,11 +6,11 @@ public class MoveAnt : MonoBehaviour
     [SerializeField] bool walking = false;
     [SerializeField] Animator animator;
     [SerializeField] float moveSpeed = 10f;
+    [SerializeField] Transform antVisual;
     Rigidbody2D rb;
     Vector2 direction = Vector2.zero;
     void Start()
     {
-        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -37,7 +37,7 @@ public class MoveAnt : MonoBehaviour
         {
             walking = true;
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
+            antVisual.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
         } else
         {
             walking = false;

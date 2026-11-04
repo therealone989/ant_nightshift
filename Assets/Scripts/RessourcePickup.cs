@@ -4,7 +4,8 @@ public class RessourcePickup : MonoBehaviour
 {
     Ressource pickedItem;
     Inventory playerInventory;
-    List<Ressource> nearbyRessources = new List<Ressource>();
+    [SerializeField] List<Ressource> nearbyRessources = new List<Ressource>();
+
     private void Start()
     {
         playerInventory = GetComponent<Inventory>();
@@ -13,28 +14,27 @@ public class RessourcePickup : MonoBehaviour
     {
         if (collision.GetComponent<Ressource>() == null) return;
         pickedItem = collision.GetComponent<Ressource>();
-        
+        nearbyRessources.Add(pickedItem);
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (pickedItem == null) return;
-        if(collision.gameObject == pickedItem.gameObject)
-        {
-            pickedItem = null;
-        }
+        if (nearbyRessources.Count == 0) return;
+        Ressource leavingItem = collision.GetComponent<Ressource>();
+        nearbyRessources.Remove(leavingItem);
     }
 
     private void Update()
     {
-        if(pickedItem != null && Input.GetKeyDown(KeyCode.E)) {
-            Debug.Log("Ressource Eingesammelt!!");
-            playerInventory.addRessource(pickedItem.ressourceType);
+        if(nearbyRessources.Count > 0 && Input.GetKeyDown(KeyCode.E)) {
+            
             // UI Text anzeigen "E - Pickup"
             // Event an UI Script - richtiger enum type stat hochzählen.
-            Destroy(pickedItem.gameObject);
-            pickedItem = null;
-            
+            Ressource nowPickedItem = nearbyRessources[0];
+            playerInventory.addRessource(nowPickedItem.ressourceType);
+            Destroy(nowPickedItem.gameObject);
+            nearbyRessources.Remove(nowPickedItem);
         }
     }
 
