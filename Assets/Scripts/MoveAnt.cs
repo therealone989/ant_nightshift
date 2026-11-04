@@ -31,17 +31,25 @@ public class MoveAnt : MonoBehaviour
         if (Input.GetKey(KeyCode.A)){direction += Vector2.left;}
         if (Input.GetKey(KeyCode.S)){direction += Vector2.down;}
 
-        direction = direction.normalized;
-
+        direction = direction.normalized; 
         if (direction != Vector2.zero)
         {
             walking = true;
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            antVisual.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
         } else
         {
             walking = false;
         }
+        LookAtMouse();
         animator.SetBool("isWalking", walking);
+    }
+
+    public void LookAtMouse()
+    {
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = antVisual.position.z -  Camera.main.transform.position.z;
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(mousePos);
+        Vector3 aimDirection = mouseWorldPos - antVisual.position;
+        float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        antVisual.rotation = Quaternion.Euler(0f, 0f, angle -90f);
     }
 }
