@@ -27,7 +27,7 @@ public class RessourcePickup : MonoBehaviour
 
         Ressource leavingItem = collision.GetComponent<Ressource>();
         nearbyRessources.Remove(leavingItem);
-        UpdatePickupUI(false);
+        UpdatePickupUI(nearbyRessources.Count > 0);
     }
 
     private void Update()
@@ -37,6 +37,7 @@ public class RessourcePickup : MonoBehaviour
             playerInventory.addRessource(nowPickedItem.ressourceType);
             Destroy(nowPickedItem.gameObject);
             nearbyRessources.Remove(nowPickedItem);
+            UpdatePickupUI(nearbyRessources.Count > 0);
         } 
     }
     public void UpdatePickupUI(bool active)
