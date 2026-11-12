@@ -611,7 +611,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.17, y: 3.41, z: 0}
-  m_LocalScale: {x: 8, y: 8, z: 1}
+  m_LocalScale: {x: 16, y: 16, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -750,7 +750,7 @@ GameObject:
   - component: {fileID: 230364571}
   m_Layer: 3
   m_Name: WorldCanvas
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7485,7 +7485,7 @@ GameObject:
   - component: {fileID: 393636955}
   m_Layer: 3
   m_Name: Player
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9405,37 +9405,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ressourceType: 2
---- !u!1 &952267997
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 952267998}
-  m_Layer: 0
-  m_Name: DamageCollider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &952267998
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 952267997}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1834457137}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &962791147
 GameObject:
   m_ObjectHideFlags: 0
@@ -12417,6 +12386,7 @@ GameObject:
   - component: {fileID: 1834457136}
   - component: {fileID: 1834457139}
   - component: {fileID: 1834457140}
+  - component: {fileID: 1834457141}
   m_Layer: 0
   m_Name: Kaefer
   m_TagString: Untagged
@@ -12488,11 +12458,10 @@ Transform:
   m_GameObject: {fileID: 1834457135}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.28, y: -3.06, z: 0}
+  m_LocalPosition: {x: -12.46, y: 2.01, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 952267998}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1834457139
@@ -12511,6 +12480,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   range: 5
+  moveSpeed: 5
+  player: {fileID: 0}
+  kaeferState: 0
 --- !u!61 &1834457140
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12557,6 +12529,33 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.51, y: 0.67}
   m_EdgeRadius: 0
+--- !u!50 &1834457141
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834457135}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &1845693155
 GameObject:
   m_ObjectHideFlags: 0
