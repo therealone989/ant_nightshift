@@ -4,21 +4,32 @@ using UnityEngine.UIElements;
 
 public class KaeferAI : MonoBehaviour
 {
-
+    [Header("Spielererkennung")]
     public LayerMask playerMask;
     public float range = 5f;
     [SerializeField] float attackRange = 2f;
-    public float moveSpeed = 3f;
     public GameObject player;
-    public AttackPhase kaeferState;
-    [SerializeField] LineRenderer chargeLine;
-    [SerializeField] float chargeDuration = 0.8f;
+
+    [Header("Bewegung")]
+    public float moveSpeed = 3f;
     [SerializeField] float dashSpeed = 16f;
+
+    [Header("Angriff")]
+    public AttackPhase kaeferState;
+    [SerializeField] float chargeDuration = 0.8f;
     [SerializeField] float dashDuration = 1f;
     [SerializeField] float coolDownDuration = 3f;
+    [SerializeField] LineRenderer chargeLine;
 
-    private Rigidbody2D rb;
-    public bool playerDetected = false;
+    [Header("Collider")]
+    [SerializeField] Collider2D bodyCollider;
+    [SerializeField] Collider2D dashHitbox;
+    [SerializeField] Collider2D playerBodyCollider;
+
+    Rigidbody2D rb;
+    bool playerDetected = false;
+    bool ignorePlayerCollision = false;
+    bool hitThisDash = false;
 
     Vector2 aimDirection;
     Vector2 dashDirection;
@@ -32,11 +43,14 @@ public class KaeferAI : MonoBehaviour
         chargeLine.positionCount = 2;
         chargeLine.useWorldSpace = true;
         chargeLine.enabled = false;
+
+        dashHitbox.enabled = false;
     }
 
     void Update()
     {
-        if (playerDetected == false) { DetectPlayerInRange(); }
+        TryRestoreCollision();
+        if (!playerDetected) { DetectPlayerInRange(); }
         if (!playerDetected) return;
 
         if(kaeferState == AttackPhase.Chasing)
@@ -44,23 +58,9 @@ public class KaeferAI : MonoBehaviour
             LookAtPlayer();
             CheckAttackRange();
         }
-        else if (kaeferState == AttackPhase.Charging) {
-            ChargeAttack();
-        }
-        else if (kaeferState == AttackPhase.Dashing)
-        {
-            DashAttack();
-        }
-        else if (kaeferState == AttackPhase.Cooldown)
-        {
-            CoolDown();
-        }
-
-        // Aufladen
-        // Sturmangriff - collider? - Schnell? - zieht an ihn vorbei ein paar units damit es aussieht als ob er schnell stürmt
-        // Erschöpft - keine bewegung - zeit zum zubeißen
-
-
+        else if (kaeferState == AttackPhase.Charging)   { StartCharge(); }
+        else if (kaeferState == AttackPhase.Dashing)    { DashAttack(); }
+        else if (kaeferState == AttackPhase.Cooldown)   { CoolDown(); }
     }
 
     private void FixedUpdate()
@@ -72,6 +72,7 @@ public class KaeferAI : MonoBehaviour
             rb.MovePosition(rb.position + aimDirection * moveSpeed * Time.fixedDeltaTime);
         } else if (kaeferState == AttackPhase.Dashing)
         {
+            // nur beim dash, damit es kein "autoaim" gibt wegen Lookat.
             rb.MovePosition(rb.position + dashDirection * dashSpeed  * Time.fixedDeltaTime);
         }
     }
@@ -100,11 +101,12 @@ public class KaeferAI : MonoBehaviour
         }
     }
 
-    private void ChargeAttack()
+    private void StartCharge()
     {
         stateTimer += Time.deltaTime;
 
         aimDirection = (player.transform.position - transform.position).normalized;
+
         LookAtPlayer();
 
         Vector2 lineStart = transform.position;
@@ -115,9 +117,15 @@ public class KaeferAI : MonoBehaviour
         if(stateTimer >= chargeDuration)
         {
             dashDirection = aimDirection;
+            hitThisDash = false;
             kaeferState = AttackPhase.Dashing;
             stateTimer = 0f;
             chargeLine.enabled = false;
+
+            Physics2D.IgnoreCollision(bodyCollider, playerBodyCollider, true);
+
+            ignorePlayerCollision = true;
+            dashHitbox.enabled = true;
         }
 
     }
@@ -130,6 +138,8 @@ public class KaeferAI : MonoBehaviour
         {
             kaeferState = AttackPhase.Cooldown;
             stateTimer = 0f;
+
+            dashHitbox.enabled = false;
         }
     }
 
@@ -143,7 +153,20 @@ public class KaeferAI : MonoBehaviour
             stateTimer = 0f;
         }
     }
+    private void TryRestoreCollision()
+    {
+        if (!ignorePlayerCollision) return;
 
+        if (kaeferState == AttackPhase.Dashing) return;
+
+        ColliderDistance2D distance = bodyCollider.Distance(playerBodyCollider);
+
+        if (!distance.isOverlapped)
+        {
+            Physics2D.IgnoreCollision(bodyCollider,playerBodyCollider,false);
+            ignorePlayerCollision = false;
+        }
+    }
     private void LookAtPlayer()
     {
         Vector3 lookDirection = player.transform.position - transform.position;
@@ -151,12 +174,15 @@ public class KaeferAI : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
-        {
-            Debug.Log("GATCHAAAAA");
-        }
+        if (kaeferState != AttackPhase.Dashing) return;
+        if (hitThisDash) return;
+        if (collision != playerBodyCollider) return;
+
+        hitThisDash = true;
+
+        Debug.Log("Spieler getroffen");
     }
 
 
