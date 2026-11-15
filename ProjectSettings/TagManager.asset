@@ -53,5 +53,8 @@ TagManager:
   - name: Player-sort
     uniqueID: 3624740475
     locked: 0
+  - name: Enemy_Attacks
+    uniqueID: 182080481
+    locked: 0
   m_RenderingLayers:
   - Default
