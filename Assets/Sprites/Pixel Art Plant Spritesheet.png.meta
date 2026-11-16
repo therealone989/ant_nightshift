@@ -1,0 +1,1379 @@
+fileFormatVersion: 2
+guid: e9b4d22491b63904a9b271b2dde0c401
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7916647360567964200
+    second: Pixel Art Plant Spritesheet_0
+  - first:
+      213: 4354549624557740513
+    second: Pixel Art Plant Spritesheet_1
+  - first:
+      213: 1706171610628934204
+    second: Pixel Art Plant Spritesheet_2
+  - first:
+      213: -1877442649840107328
+    second: Pixel Art Plant Spritesheet_3
+  - first:
+      213: -1093737806227247996
+    second: Pixel Art Plant Spritesheet_4
+  - first:
+      213: 666468559927354160
+    second: Pixel Art Plant Spritesheet_5
+  - first:
+      213: -18821854683799253
+    second: Pixel Art Plant Spritesheet_6
+  - first:
+      213: 7409489015682387281
+    second: Pixel Art Plant Spritesheet_7
+  - first:
+      213: 2710704435260207821
+    second: Pixel Art Plant Spritesheet_8
+  - first:
+      213: 2986247715356260198
+    second: Pixel Art Plant Spritesheet_9
+  - first:
+      213: -7926172733868622060
+    second: Pixel Art Plant Spritesheet_10
+  - first:
+      213: 2045736329376149896
+    second: Pixel Art Plant Spritesheet_11
+  - first:
+      213: 8121037012822668881
+    second: Pixel Art Plant Spritesheet_12
+  - first:
+      213: 5390926132209100678
+    second: Pixel Art Plant Spritesheet_13
+  - first:
+      213: -6834931436483424031
+    second: Pixel Art Plant Spritesheet_14
+  - first:
+      213: -8816948216373279271
+    second: Pixel Art Plant Spritesheet_15
+  - first:
+      213: -1155381217430180563
+    second: Pixel Art Plant Spritesheet_16
+  - first:
+      213: -7873946797204547593
+    second: Pixel Art Plant Spritesheet_17
+  - first:
+      213: 8166029247314801892
+    second: Pixel Art Plant Spritesheet_18
+  - first:
+      213: -3999629279791613307
+    second: Pixel Art Plant Spritesheet_19
+  - first:
+      213: 5811848990714023770
+    second: Pixel Art Plant Spritesheet_20
+  - first:
+      213: 4148875519262353150
+    second: Pixel Art Plant Spritesheet_21
+  - first:
+      213: 5330573803456520734
+    second: Pixel Art Plant Spritesheet_22
+  - first:
+      213: -619945516100275693
+    second: Pixel Art Plant Spritesheet_23
+  - first:
+      213: -8052158072748382799
+    second: Pixel Art Plant Spritesheet_24
+  - first:
+      213: 3393578836846074659
+    second: Pixel Art Plant Spritesheet_25
+  - first:
+      213: -7684829692019442631
+    second: Pixel Art Plant Spritesheet_26
+  - first:
+      213: -1872005311949583871
+    second: Pixel Art Plant Spritesheet_27
+  - first:
+      213: -8110482019664908321
+    second: Pixel Art Plant Spritesheet_28
+  - first:
+      213: -5159171824890204491
+    second: Pixel Art Plant Spritesheet_29
+  - first:
+      213: 1945411206092671003
+    second: Pixel Art Plant Spritesheet_30
+  - first:
+      213: -2081323208956323930
+    second: Pixel Art Plant Spritesheet_31
+  - first:
+      213: -6108638439429895993
+    second: Pixel Art Plant Spritesheet_32
+  - first:
+      213: -3785772008711595677
+    second: Pixel Art Plant Spritesheet_33
+  - first:
+      213: 1935494735828771709
+    second: Pixel Art Plant Spritesheet_34
+  - first:
+      213: 6550740268401651281
+    second: Pixel Art Plant Spritesheet_35
+  - first:
+      213: -9036447490851407396
+    second: Pixel Art Plant Spritesheet_36
+  - first:
+      213: 6175834902713664580
+    second: Pixel Art Plant Spritesheet_37
+  - first:
+      213: 8724346757576652702
+    second: Pixel Art Plant Spritesheet_38
+  - first:
+      213: 6281963852874667625
+    second: Pixel Art Plant Spritesheet_39
+  - first:
+      213: -1783565384002927440
+    second: Pixel Art Plant Spritesheet_40
+  - first:
+      213: 6080819114166106545
+    second: Pixel Art Plant Spritesheet_41
+  - first:
+      213: 4267337047982375652
+    second: Pixel Art Plant Spritesheet_42
+  - first:
+      213: -1673054941751855001
+    second: Pixel Art Plant Spritesheet_43
+  - first:
+      213: 1727252084951395266
+    second: Pixel Art Plant Spritesheet_44
+  - first:
+      213: -1981608821702424554
+    second: Pixel Art Plant Spritesheet_45
+  - first:
+      213: 7770107125226050962
+    second: Pixel Art Plant Spritesheet_46
+  - first:
+      213: 3472791318966462219
+    second: Pixel Art Plant Spritesheet_47
+  - first:
+      213: -4178871009961911630
+    second: Pixel Art Plant Spritesheet_48
+  - first:
+      213: 2950447888559377406
+    second: Pixel Art Plant Spritesheet_49
+  - first:
+      213: -4036138080275242510
+    second: Pixel Art Plant Spritesheet_50
+  - first:
+      213: 2556446166940332668
+    second: Pixel Art Plant Spritesheet_51
+  - first:
+      213: -5717069536126348297
+    second: Pixel Art Plant Spritesheet_52
+  - first:
+      213: 247819125123693273
+    second: Pixel Art Plant Spritesheet_53
+  - first:
+      213: -3846384184424648959
+    second: Pixel Art Plant Spritesheet_54
+  - first:
+      213: 540347525690810721
+    second: Pixel Art Plant Spritesheet_55
+  - first:
+      213: 7514389845330475916
+    second: Pixel Art Plant Spritesheet_56
+  - first:
+      213: -4169443801456235298
+    second: Pixel Art Plant Spritesheet_57
+  - first:
+      213: -4435780576435567652
+    second: Pixel Art Plant Spritesheet_58
+  - first:
+      213: 6929874848706045112
+    second: Pixel Art Plant Spritesheet_59
+  - first:
+      213: -1654390425730446485
+    second: Pixel Art Plant Spritesheet_60
+  - first:
+      213: -4415383145050367056
+    second: Pixel Art Plant Spritesheet_61
+  - first:
+      213: -2963812322205477603
+    second: Pixel Art Plant Spritesheet_62
+  - first:
+      213: 3906887566002800661
+    second: Pixel Art Plant Spritesheet_63
+  - first:
+      213: 8728397805062180763
+    second: Pixel Art Plant Spritesheet_64
+  - first:
+      213: 1312852741323172583
+    second: Pixel Art Plant Spritesheet_65
+  - first:
+      213: 3487399083205022934
+    second: Pixel Art Plant Spritesheet_66
+  - first:
+      213: -8417419327386251950
+    second: Pixel Art Plant Spritesheet_67
+  - first:
+      213: -8623277044058583140
+    second: Pixel Art Plant Spritesheet_68
+  - first:
+      213: 8736741006842088703
+    second: Pixel Art Plant Spritesheet_69
+  - first:
+      213: -4723255153937424017
+    second: Pixel Art Plant Spritesheet_70
+  - first:
+      213: -7807254963965221354
+    second: Pixel Art Plant Spritesheet_71
+  - first:
+      213: -9162463191339337653
+    second: Pixel Art Plant Spritesheet_72
+  - first:
+      213: -2101479611458817425
+    second: Pixel Art Plant Spritesheet_73
+  - first:
+      213: 747838365777120435
+    second: Pixel Art Plant Spritesheet_74
+  - first:
+      213: -3066096731600760972
+    second: Pixel Art Plant Spritesheet_75
+  - first:
+      213: -3921441048898756732
+    second: Pixel Art Plant Spritesheet_76
+  - first:
+      213: 8709044241868613190
+    second: Pixel Art Plant Spritesheet_77
+  - first:
+      213: -3970977695963229868
+    second: Pixel Art Plant Spritesheet_78
+  - first:
+      213: -770913134867041532
+    second: Pixel Art Plant Spritesheet_79
+  - first:
+      213: -6401983270680944782
+    second: Pixel Art Plant Spritesheet_80
+  - first:
+      213: -1809071996921257735
+    second: Pixel Art Plant Spritesheet_81
+  - first:
+      213: 6225737484319660062
+    second: Pixel Art Plant Spritesheet_82
+  - first:
+      213: -1723704227504030629
+    second: Pixel Art Plant Spritesheet_83
+  - first:
+      213: -718986754696838791
+    second: Pixel Art Plant Spritesheet_84
+  - first:
+      213: 2172955486542458701
+    second: Pixel Art Plant Spritesheet_85
+  - first:
+      213: 2234319641276314829
+    second: Pixel Art Plant Spritesheet_86
+  - first:
+      213: 8252812036846496778
+    second: Pixel Art Plant Spritesheet_87
+  - first:
+      213: -5894867199520254214
+    second: Pixel Art Plant Spritesheet_88
+  - first:
+      213: 2992394657141664240
+    second: Pixel Art Plant Spritesheet_89
+  - first:
+      213: 3093744681624044353
+    second: Pixel Art Plant Spritesheet_90
+  - first:
+      213: -14983877307872793
+    second: Pixel Art Plant Spritesheet_91
+  - first:
+      213: -5168396551184907876
+    second: Pixel Art Plant Spritesheet_92
+  - first:
+      213: -5260527417247812733
+    second: Pixel Art Plant Spritesheet_93
+  - first:
+      213: 8351376654610925290
+    second: Pixel Art Plant Spritesheet_94
+  - first:
+      213: -2814631130909501308
+    second: Pixel Art Plant Spritesheet_95
+  - first:
+      213: -8602265523471524556
+    second: Pixel Art Plant Spritesheet_96
+  - first:
+      213: -3384722498494962468
+    second: Pixel Art Plant Spritesheet_97
+  - first:
+      213: 3042272787420224998
+    second: Pixel Art Plant Spritesheet_98
+  - first:
+      213: -4197279440000919205
+    second: Pixel Art Plant Spritesheet_99
+  - first:
+      213: -3648801611251382392
+    second: Pixel Art Plant Spritesheet_100
+  - first:
+      213: 4358364631302234941
+    second: Pixel Art Plant Spritesheet_101
+  - first:
+      213: 8011428056550368365
+    second: Pixel Art Plant Spritesheet_102
+  - first:
+      213: -2260492792880142227
+    second: Pixel Art Plant Spritesheet_103
+  - first:
+      213: -4377458245695758019
+    second: Pixel Art Plant Spritesheet_104
+  - first:
+      213: 6189289007156637941
+    second: Pixel Art Plant Spritesheet_105
+  - first:
+      213: -7853354819118282346
+    second: Pixel Art Plant Spritesheet_106
+  - first:
+      213: 8212969311801869283
+    second: Pixel Art Plant Spritesheet_107
+  - first:
+      213: -7821803224204655190
+    second: Pixel Art Plant Spritesheet_108
+  - first:
+      213: -2045919077829961012
+    second: Pixel Art Plant Spritesheet_109
+  - first:
+      213: 3756857115410705964
+    second: Pixel Art Plant Spritesheet_110
+  - first:
+      213: 673762001193955092
+    second: Pixel Art Plant Spritesheet_111
+  - first:
+      213: 7017129537648931118
+    second: Pixel Art Plant Spritesheet_112
+  - first:
+      213: -1832072426812297448
+    second: Pixel Art Plant Spritesheet_113
+  - first:
+      213: -3802653436597073045
+    second: Pixel Art Plant Spritesheet_114
+  - first:
+      213: -6940833226539390376
+    second: Pixel Art Plant Spritesheet_115
+  - first:
+      213: 6694602461283725505
+    second: Pixel Art Plant Spritesheet_116
+  - first:
+      213: -7436412550830377060
+    second: Pixel Art Plant Spritesheet_117
+  - first:
+      213: 4981392843239154970
+    second: Pixel Art Plant Spritesheet_118
+  - first:
+      213: -1888094974296685534
+    second: Pixel Art Plant Spritesheet_119
+  - first:
+      213: -2231157673202123012
+    second: Pixel Art Plant Spritesheet_120
+  - first:
+      213: 7856888869459086422
+    second: Pixel Art Plant Spritesheet_121
+  - first:
+      213: 1176662267516911077
+    second: Pixel Art Plant Spritesheet_122
+  - first:
+      213: -8423377213481452146
+    second: Pixel Art Plant Spritesheet_123
+  - first:
+      213: -8904083819672084872
+    second: Pixel Art Plant Spritesheet_124
+  - first:
+      213: 5582924938282032247
+    second: Pixel Art Plant Spritesheet_125
+  - first:
+      213: 389039031581696453
+    second: Pixel Art Plant Spritesheet_126
+  - first:
+      213: 1932585467703745758
+    second: Pixel Art Plant Spritesheet_127
+  - first:
+      213: 3591334811387182442
+    second: Pixel Art Plant Spritesheet_128
+  - first:
+      213: 5443837036930786371
+    second: Pixel Art Plant Spritesheet_129
+  - first:
+      213: -2427093250801273459
+    second: Pixel Art Plant Spritesheet_130
+  - first:
+      213: 4392339317117734798
+    second: Pixel Art Plant Spritesheet_131
+  - first:
+      213: 351617850385026283
+    second: Pixel Art Plant Spritesheet_132
+  - first:
+      213: 8442525257649369146
+    second: Pixel Art Plant Spritesheet_133
+  - first:
+      213: -597084436017648624
+    second: Pixel Art Plant Spritesheet_134
+  - first:
+      213: -5110576214144911409
+    second: Pixel Art Plant Spritesheet_135
+  - first:
+      213: -5228428528824653282
+    second: Pixel Art Plant Spritesheet_136
+  - first:
+      213: -5189655404113088597
+    second: Pixel Art Plant Spritesheet_137
+  - first:
+      213: -3344738333630089583
+    second: Pixel Art Plant Spritesheet_138
+  - first:
+      213: -15710590598241064
+    second: Pixel Art Plant Spritesheet_139
+  - first:
+      213: 3957501484430932286
+    second: Pixel Art Plant Spritesheet_140
+  - first:
+      213: 3984493246977703010
+    second: Pixel Art Plant Spritesheet_141
+  - first:
+      213: 3317627467553959023
+    second: Pixel Art Plant Spritesheet_142
+  - first:
+      213: 7974467799006491644
+    second: Pixel Art Plant Spritesheet_143
+  - first:
+      213: -2855941337226007944
+    second: Pixel Art Plant Spritesheet_144
+  - first:
+      213: 1536220914829008269
+    second: Pixel Art Plant Spritesheet_145
+  - first:
+      213: 1656558972833602859
+    second: Pixel Art Plant Spritesheet_146
+  - first:
+      213: 2389266188806559162
+    second: Pixel Art Plant Spritesheet_147
+  - first:
+      213: 8274163510992854344
+    second: Pixel Art Plant Spritesheet_148
+  - first:
+      213: -8333102182053041823
+    second: Pixel Art Plant Spritesheet_149
+  - first:
+      213: 7215392410187470759
+    second: Pixel Art Plant Spritesheet_150
+  - first:
+      213: 2595241735644257603
+    second: Pixel Art Plant Spritesheet_151
+  - first:
+      213: -4842654406576406229
+    second: Pixel Art Plant Spritesheet_152
+  - first:
+      213: -6206878664976314648
+    second: Pixel Art Plant Spritesheet_153
+  - first:
+      213: -758708547352289630
+    second: Pixel Art Plant Spritesheet_154
+  - first:
+      213: -5297770751711416683
+    second: Pixel Art Plant Spritesheet_155
+  - first:
+      213: -6081118324681915733
+    second: Pixel Art Plant Spritesheet_156
+  - first:
+      213: -2299988101147424415
+    second: Pixel Art Plant Spritesheet_157
+  - first:
+      213: 6249459593647077928
+    second: Pixel Art Plant Spritesheet_158
+  - first:
+      213: 8125910174832450707
+    second: Pixel Art Plant Spritesheet_159
+  - first:
+      213: 254621142618684883
+    second: Pixel Art Plant Spritesheet_160
+  - first:
+      213: -9216389100283417648
+    second: Pixel Art Plant Spritesheet_161
+  - first:
+      213: 6870270230031133277
+    second: Pixel Art Plant Spritesheet_162
+  - first:
+      213: -6907236257484479083
+    second: Pixel Art Plant Spritesheet_163
+  - first:
+      213: 2121065691325597412
+    second: Pixel Art Plant Spritesheet_164
+  - first:
+      213: 7545932429019144742
+    second: Pixel Art Plant Spritesheet_165
+  - first:
+      213: 8958917031393068005
+    second: Pixel Art Plant Spritesheet_166
+  - first:
+      213: -1045286813827782588
+    second: Pixel Art Plant Spritesheet_167
+  - first:
+      213: -1823776153787688027
+    second: Pixel Art Plant Spritesheet_168
+  - first:
+      213: 6002087166039217853
+    second: Pixel Art Plant Spritesheet_169
+  - first:
+      213: -5286720427305949225
+    second: Pixel Art Plant Spritesheet_170
+  - first:
+      213: 5645864142276813321
+    second: Pixel Art Plant Spritesheet_171
+  - first:
+      213: 2477579487632039651
+    second: Pixel Art Plant Spritesheet_172
+  - first:
+      213: -6884635889447379168
+    second: Pixel Art Plant Spritesheet_173
+  - first:
+      213: 1548353625553976889
+    second: Pixel Art Plant Spritesheet_174
+  - first:
+      213: 46471301933752046
+    second: Pixel Art Plant Spritesheet_175
+  - first:
+      213: 7152343258118520136
+    second: Pixel Art Plant Spritesheet_176
+  - first:
+      213: -2095697658409097597
+    second: Pixel Art Plant Spritesheet_177
+  - first:
+      213: 4694199085572567621
+    second: Pixel Art Plant Spritesheet_178
+  - first:
+      213: -6383812054946708488
+    second: Pixel Art Plant Spritesheet_179
+  - first:
+      213: 2661268131119110583
+    second: Pixel Art Plant Spritesheet_180
+  - first:
+      213: 4923408089219461991
+    second: Pixel Art Plant Spritesheet_181
+  - first:
+      213: 7859355368305439320
+    second: Pixel Art Plant Spritesheet_182
+  - first:
+      213: -57820119594849084
+    second: Pixel Art Plant Spritesheet_183
+  - first:
+      213: 4620517087614775008
+    second: Pixel Art Plant Spritesheet_184
+  - first:
+      213: 3303650067627664373
+    second: Pixel Art Plant Spritesheet_185
+  - first:
+      213: -4510957007208694830
+    second: Pixel Art Plant Spritesheet_186
+  - first:
+      213: -430671787920207864
+    second: Pixel Art Plant Spritesheet_187
+  - first:
+      213: -3458911654219660853
+    second: Pixel Art Plant Spritesheet_188
+  - first:
+      213: 9051504601578459414
+    second: Pixel Art Plant Spritesheet_189
+  - first:
+      213: -6567552517073243467
+    second: Pixel Art Plant Spritesheet_190
+  - first:
+      213: -4857055658373581245
+    second: Pixel Art Plant Spritesheet_191
+  - first:
+      213: 4882250300798722968
+    second: Pixel Art Plant Spritesheet_192
+  - first:
+      213: -8111911212997061508
+    second: Pixel Art Plant Spritesheet_193
+  - first:
+      213: -615518562146706839
+    second: Pixel Art Plant Spritesheet_194
+  - first:
+      213: -1978325166843148405
+    second: Pixel Art Plant Spritesheet_195
+  - first:
+      213: -4905549756334464287
+    second: Pixel Art Plant Spritesheet_196
+  - first:
+      213: 7876169484420027876
+    second: Pixel Art Plant Spritesheet_197
+  - first:
+      213: 8618875022584580520
+    second: Pixel Art Plant Spritesheet_198
+  - first:
+      213: 7363820741392609461
+    second: Pixel Art Plant Spritesheet_199
+  - first:
+      213: 3473355688251810492
+    second: Pixel Art Plant Spritesheet_200
+  - first:
+      213: -599477634275105187
+    second: Pixel Art Plant Spritesheet_201
+  - first:
+      213: 4801189904660468733
+    second: Pixel Art Plant Spritesheet_202
+  - first:
+      213: 4945737710399828459
+    second: Pixel Art Plant Spritesheet_203
+  - first:
+      213: 6787680163431266389
+    second: Pixel Art Plant Spritesheet_204
+  - first:
+      213: -5534922766946561111
+    second: Pixel Art Plant Spritesheet_205
+  - first:
+      213: -2334660895050552912
+    second: Pixel Art Plant Spritesheet_206
+  - first:
+      213: -5051568234779025227
+    second: Pixel Art Plant Spritesheet_207
+  - first:
+      213: -7281340903126670730
+    second: Pixel Art Plant Spritesheet_208
+  - first:
+      213: 5852383908635130617
+    second: Pixel Art Plant Spritesheet_209
+  - first:
+      213: 5555394794449865099
+    second: Pixel Art Plant Spritesheet_210
+  - first:
+      213: 9196636222798088574
+    second: Pixel Art Plant Spritesheet_211
+  - first:
+      213: -3790298662720483215
+    second: Pixel Art Plant Spritesheet_212
+  - first:
+      213: 866690187425465968
+    second: Pixel Art Plant Spritesheet_213
+  - first:
+      213: 8532168780297768587
+    second: Pixel Art Plant Spritesheet_214
+  - first:
+      213: -6166081291832988065
+    second: Pixel Art Plant Spritesheet_215
+  - first:
+      213: 6984161154563771961
+    second: Pixel Art Plant Spritesheet_216
+  - first:
+      213: -76331027245012381
+    second: Pixel Art Plant Spritesheet_217
+  - first:
+      213: 891466000588470025
+    second: Pixel Art Plant Spritesheet_218
+  - first:
+      213: -4753790804084115178
+    second: Pixel Art Plant Spritesheet_219
+  - first:
+      213: -921190955094016771
+    second: Pixel Art Plant Spritesheet_220
+  - first:
+      213: 875148803506002733
+    second: Pixel Art Plant Spritesheet_221
+  - first:
+      213: 6607890826306671332
+    second: Pixel Art Plant Spritesheet_222
+  - first:
+      213: 8631923694482641289
+    second: Pixel Art Plant Spritesheet_223
+  - first:
+      213: -1399974469545526218
+    second: Pixel Art Plant Spritesheet_224
+  - first:
+      213: -6617790417024324903
+    second: Pixel Art Plant Spritesheet_225
+  - first:
+      213: -6864585865112511959
+    second: Pixel Art Plant Spritesheet_226
+  - first:
+      213: 1180977079425091833
+    second: Pixel Art Plant Spritesheet_227
+  - first:
+      213: -6440960220650909856
+    second: Pixel Art Plant Spritesheet_228
+  - first:
+      213: -2534444804651045774
+    second: Pixel Art Plant Spritesheet_229
+  - first:
+      213: 632496016898107650
+    second: Pixel Art Plant Spritesheet_230
+  - first:
+      213: 1590214635285695594
+    second: Pixel Art Plant Spritesheet_231
+  - first:
+      213: 3894597399627555660
+    second: Pixel Art Plant Spritesheet_232
+  - first:
+      213: -8647654349442845986
+    second: Pixel Art Plant Spritesheet_233
+  - first:
+      213: 8651130463229839561
+    second: Pixel Art Plant Spritesheet_234
+  - first:
+      213: 5521016886781544202
+    second: Pixel Art Plant Spritesheet_235
+  - first:
+      213: -8699547411137344610
+    second: Pixel Art Plant Spritesheet_236
+  - first:
+      213: 8003388111155776564
+    second: Pixel Art Plant Spritesheet_237
+  - first:
+      213: 4764851095594166343
+    second: Pixel Art Plant Spritesheet_238
+  - first:
+      213: -203880278845585853
+    second: Pixel Art Plant Spritesheet_239
+  - first:
+      213: -8319159620603325487
+    second: Pixel Art Plant Spritesheet_240
+  - first:
+      213: 2682218338324502260
+    second: Pixel Art Plant Spritesheet_241
+  - first:
+      213: 7493121771483034771
+    second: Pixel Art Plant Spritesheet_242
+  - first:
+      213: -1580346291562933588
+    second: Pixel Art Plant Spritesheet_243
+  - first:
+      213: 8183567315434876990
+    second: Pixel Art Plant Spritesheet_244
+  - first:
+      213: -1107621296702745079
+    second: Pixel Art Plant Spritesheet_245
+  - first:
+      213: -3001876386866532803
+    second: Pixel Art Plant Spritesheet_246
+  - first:
+      213: -7742655498334345803
+    second: Pixel Art Plant Spritesheet_247
+  - first:
+      213: -4900748680616579935
+    second: Pixel Art Plant Spritesheet_248
+  - first:
+      213: 7738155825853919395
+    second: Pixel Art Plant Spritesheet_249
+  - first:
+      213: 7919238375699636009
+    second: Pixel Art Plant Spritesheet_250
+  - first:
+      213: 6704625680131409091
+    second: Pixel Art Plant Spritesheet_251
+  - first:
+      213: 194280259236777901
+    second: Pixel Art Plant Spritesheet_252
+  - first:
+      213: 2754275484057488616
+    second: Pixel Art Plant Spritesheet_253
+  - first:
+      213: 8279576374631588895
+    second: Pixel Art Plant Spritesheet_254
+  - first:
+      213: 3343502844933050231
+    second: Pixel Art Plant Spritesheet_255
+  - first:
+      213: -1066153220887537967
+    second: Pixel Art Plant Spritesheet_256
+  - first:
+      213: -4611002262634336224
+    second: Pixel Art Plant Spritesheet_257
+  - first:
+      213: -6105722382903106131
+    second: Pixel Art Plant Spritesheet_258
+  - first:
+      213: 2461254563221536431
+    second: Pixel Art Plant Spritesheet_259
+  - first:
+      213: -2497404233146569856
+    second: Pixel Art Plant Spritesheet_260
+  - first:
+      213: 6556074881074817653
+    second: Pixel Art Plant Spritesheet_261
+  - first:
+      213: 5483710754531077911
+    second: Pixel Art Plant Spritesheet_262
+  - first:
+      213: -2806400992607864290
+    second: Pixel Art Plant Spritesheet_263
+  - first:
+      213: -2150222178530580815
+    second: Pixel Art Plant Spritesheet_264
+  - first:
+      213: 1854909363167401484
+    second: Pixel Art Plant Spritesheet_265
+  - first:
+      213: -2985083126305928315
+    second: Pixel Art Plant Spritesheet_266
+  - first:
+      213: -4882040484595328641
+    second: Pixel Art Plant Spritesheet_267
+  - first:
+      213: 6068927849364219220
+    second: Pixel Art Plant Spritesheet_268
+  - first:
+      213: 1933283310658941469
+    second: Pixel Art Plant Spritesheet_269
+  - first:
+      213: -1489385352834703387
+    second: Pixel Art Plant Spritesheet_270
+  - first:
+      213: -8267287089701252629
+    second: Pixel Art Plant Spritesheet_271
+  - first:
+      213: 8618448415184012660
+    second: Pixel Art Plant Spritesheet_272
+  - first:
+      213: 1570094263517747988
+    second: Pixel Art Plant Spritesheet_273
+  - first:
+      213: 3386568072232760502
+    second: Pixel Art Plant Spritesheet_274
+  - first:
+      213: 8945162892345620291
+    second: Pixel Art Plant Spritesheet_275
+  - first:
+      213: -5974252561592785830
+    second: Pixel Art Plant Spritesheet_276
+  - first:
+      213: -6997606323285883388
+    second: Pixel Art Plant Spritesheet_277
+  - first:
+      213: -487207350754318839
+    second: Pixel Art Plant Spritesheet_278
+  - first:
+      213: 472026564771289111
+    second: Pixel Art Plant Spritesheet_279
+  - first:
+      213: -3691819292366993692
+    second: Pixel Art Plant Spritesheet_280
+  - first:
+      213: 2528678190192012282
+    second: Pixel Art Plant Spritesheet_281
+  - first:
+      213: 8631027471569599934
+    second: Pixel Art Plant Spritesheet_282
+  - first:
+      213: 4483722141424074597
+    second: Pixel Art Plant Spritesheet_283
+  - first:
+      213: 4076224030530427286
+    second: Pixel Art Plant Spritesheet_284
+  - first:
+      213: -5719129157196504580
+    second: Pixel Art Plant Spritesheet_285
+  - first:
+      213: 2600048283053887552
+    second: Pixel Art Plant Spritesheet_286
+  - first:
+      213: 1554508618216290213
+    second: Pixel Art Plant Spritesheet_287
+  - first:
+      213: 4333490752104132148
+    second: Pixel Art Plant Spritesheet_288
+  - first:
+      213: 388603838663810835
+    second: Pixel Art Plant Spritesheet_289
+  - first:
+      213: -376640589048797002
+    second: Pixel Art Plant Spritesheet_290
+  - first:
+      213: 8014161720251311638
+    second: Pixel Art Plant Spritesheet_291
+  - first:
+      213: 5022102667059228075
+    second: Pixel Art Plant Spritesheet_292
+  - first:
+      213: 6302740232835172142
+    second: Pixel Art Plant Spritesheet_293
+  - first:
+      213: -8346580523574760438
+    second: Pixel Art Plant Spritesheet_294
+  - first:
+      213: 1966662120711088438
+    second: Pixel Art Plant Spritesheet_295
+  - first:
+      213: 2079704266901889048
+    second: Pixel Art Plant Spritesheet_296
+  - first:
+      213: 7108101310368944502
+    second: Pixel Art Plant Spritesheet_297
+  - first:
+      213: 1049834094399580930
+    second: Pixel Art Plant Spritesheet_298
+  - first:
+      213: -7139130829565040622
+    second: Pixel Art Plant Spritesheet_299
+  - first:
+      213: 3833850650504374982
+    second: Pixel Art Plant Spritesheet_300
+  - first:
+      213: 4725565337297820161
+    second: Pixel Art Plant Spritesheet_301
+  - first:
+      213: -8992297756648017861
+    second: Pixel Art Plant Spritesheet_302
+  - first:
+      213: 5798264452562031840
+    second: Pixel Art Plant Spritesheet_303
+  - first:
+      213: 4384221468001693972
+    second: Pixel Art Plant Spritesheet_304
+  - first:
+      213: 6797640205525863626
+    second: Pixel Art Plant Spritesheet_305
+  - first:
+      213: -6381587967648573162
+    second: Pixel Art Plant Spritesheet_306
+  - first:
+      213: 8105046518727980648
+    second: Pixel Art Plant Spritesheet_307
+  - first:
+      213: -253096315810289345
+    second: Pixel Art Plant Spritesheet_308
+  - first:
+      213: -658713422772602296
+    second: Pixel Art Plant Spritesheet_309
+  - first:
+      213: 3711715117919300393
+    second: Pixel Art Plant Spritesheet_310
+  - first:
+      213: -4720839436181773252
+    second: Pixel Art Plant Spritesheet_311
+  - first:
+      213: -739738641860794438
+    second: Pixel Art Plant Spritesheet_312
+  - first:
+      213: 5555663132886117987
+    second: Pixel Art Plant Spritesheet_313
+  - first:
+      213: 3752127066270676876
+    second: Pixel Art Plant Spritesheet_314
+  - first:
+      213: 536873735627579857
+    second: Pixel Art Plant Spritesheet_315
+  - first:
+      213: 6179255628437782271
+    second: Pixel Art Plant Spritesheet_316
+  - first:
+      213: -5728666046737133939
+    second: Pixel Art Plant Spritesheet_317
+  - first:
+      213: 8788296251059374864
+    second: Pixel Art Plant Spritesheet_318
+  - first:
+      213: -2202462405021086381
+    second: Pixel Art Plant Spritesheet_319
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pixel Art Plant Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 724
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd00557b2b622290800000000000000
+      internalID: -7916647360567964200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Plant Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 724
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e12398efc77e6c30800000000000000
+      internalID: 4354549624557740513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Plant Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 724
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ac4694a0a8da710800000000000000
+      internalID: 1706171610628934204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Plant Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 724
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c0cc1a6bdbf1f5e0800000000000000
+      internalID: -1877442649840107328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Plant Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 362
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48ce866924342d0f0800000000000000
+      internalID: -1093737806227247996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Plant Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 362
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033af68cf95cf3900800000000000000
+      internalID: 666468559927354160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Plant Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 362
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b21ee857f912dbff0800000000000000
+      internalID: -18821854683799253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Plant Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 362
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d48eaa00bc3d660800000000000000
+      internalID: 7409489015682387281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Plant Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc2b2ca625b5e9520800000000000000
+      internalID: 2710704435260207821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Plant Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667b12da978417920800000000000000
+      internalID: 2986247715356260198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Plant Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41fbf59a4e3900290800000000000000
+      internalID: -7926172733868622060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art Plant Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881b3905a5ae36c10800000000000000
+      internalID: 2045736329376149896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3611ad5f2e13b5846a0f30ce7567e80e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pixel Art Plant Spritesheet_0: -7916647360567964200
+      Pixel Art Plant Spritesheet_1: 4354549624557740513
+      Pixel Art Plant Spritesheet_10: -7926172733868622060
+      Pixel Art Plant Spritesheet_11: 2045736329376149896
+      Pixel Art Plant Spritesheet_2: 1706171610628934204
+      Pixel Art Plant Spritesheet_3: -1877442649840107328
+      Pixel Art Plant Spritesheet_4: -1093737806227247996
+      Pixel Art Plant Spritesheet_5: 666468559927354160
+      Pixel Art Plant Spritesheet_6: -18821854683799253
+      Pixel Art Plant Spritesheet_7: 7409489015682387281
+      Pixel Art Plant Spritesheet_8: 2710704435260207821
+      Pixel Art Plant Spritesheet_9: 2986247715356260198
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -15,6 +15,7 @@ public class KaeferAI : MonoBehaviour
     [SerializeField] float dashSpeed = 16f;
 
     [Header("Angriff")]
+    [SerializeField] int damage = 5;
     public AttackPhase kaeferState;
     [SerializeField] float chargeDuration = 0.8f;
     [SerializeField] float dashDuration = 1f;
@@ -182,7 +183,7 @@ public class KaeferAI : MonoBehaviour
 
         hitThisDash = true;
 
-        Debug.Log("Spieler getroffen");
+        player.GetComponent<PlayerHealth>().TakeDamage(damage);
     }
 
 
