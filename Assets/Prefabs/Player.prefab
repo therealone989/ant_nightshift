@@ -108,8 +108,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walking: 0
   animator: {fileID: 3281918667965381863}
-  moveSpeed: 8
+  moveSpeed: 6
   antVisual: {fileID: 2049586112508200304}
+  dashSpeed: 25
+  dashDuration: 0.15
+  dashCooldown: 2
 --- !u!114 &6423243412657485876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,6 +131,7 @@ MonoBehaviour:
     m_Bits: 64
   playerDamage: 10
   anim: {fileID: 3281918667965381863}
+  attackCooldown: 0.2
 --- !u!1 &5120325354892427130
 GameObject:
   m_ObjectHideFlags: 0

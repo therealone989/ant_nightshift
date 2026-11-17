@@ -6,16 +6,15 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] LayerMask hitLayer;
     [SerializeField] int playerDamage = 10;
     [SerializeField] Animator anim;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    [SerializeField] float attackCooldown = 0.5f;
+    private float elapsedTime = 0f;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0)) 
+        elapsedTime += Time.deltaTime;
+        if (Input.GetKeyDown(KeyCode.Mouse0) && elapsedTime >= attackCooldown) 
         {
+            elapsedTime = 0f;
+            anim.SetTrigger("Attack");
             RaycastHit2D hit = Physics2D.Raycast(firePoint.position, firePoint.up, 1f, hitLayer);
 
             if (hit.collider != null)
@@ -24,7 +23,6 @@ public class PlayerAttack : MonoBehaviour
                 if (hit.collider.TryGetComponent<EnemyHealth>(out EnemyHealth enemy))
                 {
                     enemy.TakeDamage(playerDamage);
-                    anim.SetTrigger("Attack");
                 }
             }
         }

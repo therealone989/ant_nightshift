@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d15fcbed4fac51c41a665ac59ccd8dc7
+guid: 4cd4f7ef00b4d1242b91adf1f20fd4d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1132726596077773708
-    second: Glow-Shroom_0
+      213: -4005858100234537964
+    second: Dash_Pixelart_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Glow-Shroom_0
+      name: Dash_Pixelart_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 46
-        height: 46
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c836ad276d048bf00800000000000000
-      internalID: 1132726596077773708
+      spriteID: 41436e228455868c0800000000000000
+      internalID: -4005858100234537964
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Glow-Shroom_0: 1132726596077773708
+      Dash_Pixelart_0: -4005858100234537964
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -3,12 +3,15 @@ using UnityEngine;
 
 public class PlayerHealthUI : MonoBehaviour
 {
+    [Header("Healthbar")]
     [SerializeField] private RectTransform topBar;
     [SerializeField] private RectTransform bottomBar;
     [SerializeField] PlayerHealth playerHealth;
     [SerializeField] TMP_Text healthText;
-
     [SerializeField] float duration = 2f;
+
+
+    
     private float elapsedTime = 0f;
     private float barFullWidth;
     private float startWidth;

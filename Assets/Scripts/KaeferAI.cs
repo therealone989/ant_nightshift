@@ -1,7 +1,5 @@
-using System;
 using UnityEngine;
-using UnityEngine.UIElements;
-
+using System.Collections;
 public class KaeferAI : MonoBehaviour
 {
     [Header("Spielererkennung")]
@@ -27,17 +25,40 @@ public class KaeferAI : MonoBehaviour
     [SerializeField] Collider2D dashHitbox;
     [SerializeField] Collider2D playerBodyCollider;
 
+    [Header("Health")]
+    [SerializeField] EnemyHealth enemyHealth;
+
+    [Header("Todesanimation")]
+    [SerializeField] SpriteRenderer kaeferSprite;
+    [SerializeField] Transform kaeferVisual;
+    [SerializeField] float squashDuration = 0.2f;
+    [SerializeField] float fadeDuration = 0.8f;
+
+    [Header("Käfer AI")]
+    [SerializeField] LayerMask enemyMask;
+    [SerializeField] float separationRadius = 2f;
+    [SerializeField] float separationStrength = 2f;
+
     Rigidbody2D rb;
     bool playerDetected = false;
     bool ignorePlayerCollision = false;
     bool hitThisDash = false;
+    private bool isDead = false;
 
     Vector2 aimDirection;
     Vector2 dashDirection;
 
     float stateTimer = 0f;
-    
 
+    private void OnEnable()
+    {
+        enemyHealth.OnEnemyDied += OnKaeferDied;
+    }
+
+    private void OnDisable()
+    {
+        enemyHealth.OnEnemyDied -= OnKaeferDied;
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -50,6 +71,7 @@ public class KaeferAI : MonoBehaviour
 
     void Update()
     {
+        if(isDead) return;
         TryRestoreCollision();
         if (!playerDetected) { DetectPlayerInRange(); }
         if (!playerDetected) return;
@@ -66,11 +88,14 @@ public class KaeferAI : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!playerDetected) return;
+        if (!playerDetected || isDead) return;
         if (kaeferState == AttackPhase.Chasing)
         {
-            aimDirection = (player.transform.position - transform.position).normalized;
-            rb.MovePosition(rb.position + aimDirection * moveSpeed * Time.fixedDeltaTime);
+            aimDirection = player.transform.position - transform.position;
+            aimDirection.Normalize();
+            Vector2 sepparationDirection = CheckNearbyEnemies();
+            Vector2 moveDirection = (aimDirection + sepparationDirection * separationStrength).normalized;
+            rb.MovePosition(rb.position + moveDirection * moveSpeed * Time.fixedDeltaTime);
         } else if (kaeferState == AttackPhase.Dashing)
         {
             // nur beim dash, damit es kein "autoaim" gibt wegen Lookat.
@@ -87,6 +112,29 @@ public class KaeferAI : MonoBehaviour
             kaeferState = AttackPhase.Chasing;
             player = playerCol.gameObject;
         }
+    }
+
+    private Vector2 CheckNearbyEnemies()
+    {
+        Collider2D[] nearbyColliders = Physics2D.OverlapCircleAll(transform.position, separationRadius, enemyMask);
+        Vector2 sepparationDirection = Vector2.zero;
+        foreach (Collider2D enemy in nearbyColliders)
+        {
+            if(enemy == bodyCollider)
+            {
+                continue;
+            }
+            Vector2 awayDirection = transform.position - enemy.transform.position;
+            float distance = awayDirection.magnitude;
+            if(distance < 0.01)
+            {
+                continue;
+            }
+            float weight = 1 - (distance / separationRadius);
+            sepparationDirection += awayDirection.normalized *weight; 
+        }
+        Debug.Log("Gefundene Collider: " + nearbyColliders.Length);
+        return sepparationDirection;
     }
 
     private void CheckAttackRange()
@@ -185,6 +233,63 @@ public class KaeferAI : MonoBehaviour
 
         player.GetComponent<PlayerHealth>().TakeDamage(damage);
     }
+
+
+
+    private void OnKaeferDied()
+    {
+        isDead = true;
+        Debug.Log("Käfer ist besiegt");
+        chargeLine.enabled = false;
+        dashHitbox.enabled = false;
+        bodyCollider.enabled = false;
+        StartCoroutine(DeathAnimation());
+    }
+
+
+    private IEnumerator DeathAnimation()
+    {
+        Vector3 originalScale = kaeferVisual.localScale;
+        Color originalColor = kaeferSprite.color;
+
+        // Phase 1: Käfer zusammendrücken
+        float timer = 0f;
+
+        while (timer < squashDuration)
+        {
+            timer += Time.deltaTime;
+
+            float t = Mathf.Clamp01(timer / squashDuration);
+
+            Vector3 newScale = originalScale;
+            newScale.y = Mathf.Lerp(originalScale.y, originalScale.y * 0.4f,t);
+
+            kaeferVisual.localScale = newScale;
+
+            yield return null;
+        }
+
+
+        // Phase 2: Langsam transparent werden
+        timer = 0f;
+
+        while (timer < fadeDuration)
+        {
+            timer += Time.deltaTime;
+
+            float t = Mathf.Clamp01(timer / fadeDuration);
+
+            Color newColor = originalColor;
+            newColor.a = Mathf.Lerp(originalColor.a, 0f, t);
+
+            kaeferSprite.color = newColor;
+
+            yield return null;
+        }
+
+        Destroy(gameObject);
+    }
+
 
 
 }
