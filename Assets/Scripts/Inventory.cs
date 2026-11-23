@@ -15,6 +15,14 @@ public class Inventory : MonoBehaviour
         OnInventoryChanged?.Invoke();
     }
 
+    public void ClearInventory()
+    {
+        berries = 0;
+        stones = 0;
+        mushrooms = 0;
+        OnInventoryChanged?.Invoke();
+    }
+
     public int GetBerries()
     {
         return berries;

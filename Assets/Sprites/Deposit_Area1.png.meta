@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 29ad878d61e4e534ab6431801700b684
+guid: e2c6c467f17e2b743af03f2ec3305151
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3469784004203370224
-    second: Ant_Hill (2)_0
+      213: -22134114547731182
+    second: Deposit_Area1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ant_Hill (2)_0
+      name: Deposit_Area1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 13
-        width: 64
-        height: 39
+        y: 0
+        width: 30
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0192026f4d9d8dfc0800000000000000
-      internalID: -3469784004203370224
+      spriteID: 215f6fcd32d51bff0800000000000000
+      internalID: -22134114547731182
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ant_Hill (2)_0: -3469784004203370224
+      Deposit_Area1_0: -22134114547731182
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

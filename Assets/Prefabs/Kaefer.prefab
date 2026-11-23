@@ -301,7 +301,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   separationRadius: 2.5
-  separationStrength: 54.88
+  separationStrength: 54
 --- !u!114 &7064774840913524444
 MonoBehaviour:
   m_ObjectHideFlags: 0
