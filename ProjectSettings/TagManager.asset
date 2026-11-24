@@ -56,5 +56,8 @@ TagManager:
   - name: Enemy_Attacks
     uniqueID: 182080481
     locked: 0
+  - name: Player
+    uniqueID: 3574618559
+    locked: 0
   m_RenderingLayers:
   - Default

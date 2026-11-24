@@ -1,27 +1,37 @@
 
+using System;
 using UnityEngine;
 
 public class NestInventory : MonoBehaviour
 {
 
-    int Nestberries = 0;
-    int Neststones = 0;
-    int Nestmushrooms = 0;
+    [SerializeField] int Nestberries = 0;
+    [SerializeField] int Neststones = 0;
+    [SerializeField] int Nestmushrooms = 0;
 
-    void Start()
-    {
-        
-    }
+    public event Action OnNestInventoryChanged;
 
-    void Update()
-    {
-        
-    }
 
-    public void TakeResources(RessourceType type, int amount)
+    public void AddRessources(RessourceType type, int amount)
     {
         if (type == RessourceType.Berry) Nestberries += amount;
         if (type == RessourceType.Stone) Neststones += amount;
         if (type == RessourceType.Mushroom) Nestmushrooms += amount;
+        OnNestInventoryChanged?.Invoke();
+    }
+
+    public int GetNestStones()
+    {
+        return Neststones;
+    }
+
+    public int GetNestBerries()
+    {
+        return Nestberries;
+    }
+
+    public int GetNestMushrooms()
+    {
+        return Nestmushrooms;
     }
 }

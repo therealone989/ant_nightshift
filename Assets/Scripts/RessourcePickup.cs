@@ -5,11 +5,11 @@ public class RessourcePickup : MonoBehaviour
     Ressource pickedItem;
     Inventory playerInventory;
     [SerializeField] List<Ressource> nearbyRessources = new List<Ressource>();
-    [SerializeField] Canvas pickUpCanvas;
+    [SerializeField] RectTransform pickUpText;
 
     private void Start()
     {
-        pickUpCanvas.gameObject.SetActive(false);
+        pickUpText.gameObject.SetActive(false);
         playerInventory = GetComponent<Inventory>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -42,6 +42,6 @@ public class RessourcePickup : MonoBehaviour
     }
     public void UpdatePickupUI(bool active)
     {
-        pickUpCanvas.gameObject.SetActive(active);
+        pickUpText.gameObject.SetActive(active);
     }
 }
